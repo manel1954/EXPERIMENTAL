@@ -1,8 +1,5 @@
 #!/bin/bash
 
-                        cd /home/pi/A108/qt/
-                        ./qt_popus_actualizada &
-
                         cd /home/pi/EXPERIMENTAL                       
                         git pull --force                      
                         sudo rm -R /home/pi/A108
