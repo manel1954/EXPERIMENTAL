@@ -15,6 +15,11 @@ frecuencia=`expr substr $frecuencia 13 9`
 frecuencia=$frecuencia$puerto
 sed -i "11c Name=$frecuencia" /home/pi/RXF_DMRPLUS.desktop
 
+fre=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMPLUS.ini)
+frecuencia=`expr substr $fre 13 17`
+sed -i "72c $frecuencia" /home/pi/status.ini
+sed -i "73c $puerto" /home/pi/status.ini
+
 sudo cp /home/pi/RXF_DMRPLUS.desktop /home/pi/Desktop
 
 sudo rm /home/pi/RXF_DMRPLUS.desktop
