@@ -7,8 +7,8 @@ numero_linea_port=`expr substr $mode 1 $caracteres_linea`
 mode=$(awk "NR==$numero_linea_port" /home/pi/MMDVMHost/MMDVMPLUS.ini)
 puerto=`expr substr $mode 15 14`
 puerto="  "$puerto
-cd /home/pi/Desktop
-sudo cp RXF_DMRPLUS.desktop /home/pi
+# cd /home/pi/Desktop
+# sudo cp RXF_DMRPLUS.desktop /home/pi
 
 frecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMPLUS.ini)
 frecuencia=`expr substr $frecuencia 13 9`
@@ -20,12 +20,12 @@ frecuencia=`expr substr $fre 13 17`
 sed -i "72c $frecuencia" /home/pi/status.ini
 sed -i "73c $puerto" /home/pi/status.ini
 
-sudo cp /home/pi/RXF_DMRPLUS.desktop /home/pi/Desktop
+# sudo cp /home/pi/RXF_DMRPLUS.desktop /home/pi/Desktop
 
-sudo rm /home/pi/RXF_DMRPLUS.desktop
+# sudo rm /home/pi/RXF_DMRPLUS.desktop
 
 #Escribe en el fichero INFO_NXDN para poner los datos en los iconos INFO TXF  
-sed -i "2c $frecuencia" /home/pi/INFO_RXF
+# sed -i "2c $frecuencia" /home/pi/INFO_RXF
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
