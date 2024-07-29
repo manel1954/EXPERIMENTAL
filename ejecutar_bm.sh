@@ -1,4 +1,14 @@
 #!/bin/bash
+
+#Colores
+ROJO="\033[1;31m"
+VERDE="\033[1;32m"
+BLANCO="\033[1;37m"
+AMARILLO="\033[1;33m"
+CIAN="\033[1;36m"
+GRIS="\033[0m"
+MARRON="\33[38;5;138m"
+
 mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVMBM.ini`
 buscar=":"
 caracteres=`expr index $mode $buscar`
@@ -35,7 +45,7 @@ sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
 sudo rm /home/pi/Abrir_MMDVMBM.desktop
 
 cd /home/pi/MMDVMHost
-echo "\33[38;5;138m"
+echo "${BLANCO}"
 echo " **************************************************************************"
 echo "                          ABRIENDO BRANDMEISTER                            "
 echo " **************************************************************************"
