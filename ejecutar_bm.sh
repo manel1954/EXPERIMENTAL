@@ -20,12 +20,15 @@ puerto="  "$puerto
 cd /home/pi/Desktop
 sudo cp RXF_BM.desktop /home/pi
 
-frecuen=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMBM.ini)
-frecuen=`expr substr $frecuen 13 17`
-frecuencia=$frecuen$puerto
+frecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMBM.ini)
+frecuencia=`expr substr $frecuencia 13 17`
+frecuencia=$frecuencia$puerto
 sed -i "12c Name=$frecuencia" /home/pi/RXF_BM.desktop
 
-sed -i "70c $frecuen" /home/pi/status.ini
+
+fre=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMBM.ini)
+frecuencia=`expr substr $fre 13 17`
+sed -i "70c $frecuencia" /home/pi/status.ini
 sed -i "71c $puerto" /home/pi/status.ini
 
 sudo cp /home/pi/RXF_BM.desktop /home/pi/Desktop
