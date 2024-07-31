@@ -14,6 +14,7 @@ sudo systemctl start AMBEServer3003
 fi
 
 dvswitch=$(awk "NR==18" /home/pi/status.ini)
+sleep 3
 if [ "$dvswitch" = 'DVSWITCH=OFF' ];then
 sudo systemctl stop ircddbgatewayd.service
 else
