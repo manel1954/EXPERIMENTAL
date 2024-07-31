@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo systemctl stop ircddbgateway.service
+sudo systemctl stop ircddbgatewayd.service
 
 # Ejecuta Solo D-STAR 
 cd /home/pi/MMDVMHost
