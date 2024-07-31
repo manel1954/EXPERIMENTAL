@@ -11,7 +11,7 @@ GRIS="\033[0m"
 
 estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
 if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
-
+sudo systemctl stop ircddbgatewayd.service
 echo "${ROJO}"
 echo "                  ******************************************"
 echo "                  *        ESTO DESACTIVARÁ DSTAR          *"
