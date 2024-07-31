@@ -15,9 +15,16 @@ fi
 
 dvswitch=$(awk "NR==18" /home/pi/status.ini)
 if [ "$dvswitch" = 'DVSWITCH=OFF' ];then
-sudo systemctl stop ircddbgateway 
+sudo systemctl stop ysfgateway.service
+sudo systemctl stop dmr2ysf.service
+sudo systemctl stop analog_bridge.service
+sudo systemctl stop ircddbgateway.service
+sudo systemctl stop md380-emu.service
+sudo systemctl stop mmdvm_bridge.service
+sudo systemctl stop nxdngateway.service
+sudo systemctl stop p25gateway.service
 else
-#sudo systemctl start AMBEServer3003 
+echo "no hace nada"  
 fi
 
 # path usuario
