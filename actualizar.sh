@@ -13,7 +13,12 @@ else
 sudo systemctl start AMBEServer3003 
 fi
 
-
+dvswitch=$(awk "NR==18" /home/pi/status.ini)
+if [ "$dvswitch" = 'DVSWITCH=OFF' ];then
+sudo systemctl stop ircddbgateway 
+else
+#sudo systemctl start AMBEServer3003 
+fi
 
 # path usuario
 usuario="/home/pi"
