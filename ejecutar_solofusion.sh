@@ -6,7 +6,7 @@
 # sudo ./MMDVMFUSION MMDVMFUSION.ini
 
 cd /home/pi/YSFClients/YSFGateway
-xterm -geometry 77x6+14+64 -bg black -fg orange -fa ‘verdana’ -fs 9x -T CONSOLA_YSFGateway -e ./YSFGateway YSFGateway.ini & 
+xterm -geometry 77x5+14+64 -bg black -fg orange -fa ‘verdana’ -fs 9x -T CONSOLA_YSFGateway -e ./YSFGateway YSFGateway.ini & 
 cd /home/pi/MMDVMHost
-xterm -geometry 77x6+14+175 -bg black -fg orange -fa ‘verdana’ -fs 9x -T CONSOLA_SOLOFUSION -e sudo ./MMDVMFUSION MMDVMFUSION.ini
+xterm -geometry 77x5+14+155 -bg black -fg orange -fa ‘verdana’ -fs 9x -T CONSOLA_SOLOFUSION -e sudo ./MMDVMFUSION MMDVMFUSION.ini
 
