@@ -6,8 +6,9 @@ sed -i "76c $frecuencia" /home/pi/status.ini
 
 puerto=$(awk "NR==77" /home/pi/MMDVMHost/MMDVM.ini)
 puerto=`expr substr $puerto 15 14`
-sed -i "77c $puerto" /home/pi//home/pi/status.ini
+sed -i "77c $puerto" /home/pi/status.ini
 
 cd /home/pi/MMDVMHost
 xterm -geometry 77x12+14+64 -bg blue -fg white -fa 'Serif' -fs 9x -T DMO -e sudo ./MMDVMHost MMDVM.ini &
 
+sed -i "11c Name=$frecuencia" /home/pi/RXF_DMR2NXDN.desktop
