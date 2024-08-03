@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/pi//qt
+cd /home/pi/A108/qt
 ./qt_openMenuGeneral
