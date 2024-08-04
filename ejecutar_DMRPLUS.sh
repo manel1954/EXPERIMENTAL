@@ -8,6 +8,9 @@ puerto=$(awk "NR==51" /home/pi/MMDVMHost/MMDVMPLUS.ini)
 puerto=`expr substr $puerto 15 14`
 sed -i "73c $puerto" /home/pi/status.ini
 
+x="14"
+
+
 cd /home/pi/MMDVMHost
-xterm -geometry 77x12+640+64 -bg black -fg white -fa 'Serif' -fs 9x -T DMR_PLUS -e sudo ./MMDVMPLUS MMDVMPLUS.ini &
+xterm -geometry 77x12+$14 -bg black -fg white -fa 'Serif' -fs 9x -T DMR_PLUS -e sudo ./MMDVMPLUS MMDVMPLUS.ini &
 
