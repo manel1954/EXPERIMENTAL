@@ -12,5 +12,5 @@ x="14"
 
 
 cd /home/pi/MMDVMHost
-xterm -geometry 77x12+$14 -bg black -fg white -fa 'Serif' -fs 9x -T DMR_PLUS -e sudo ./MMDVMPLUS MMDVMPLUS.ini &
+xterm -geometry 77x12+$x -bg black -fg white -fa 'Serif' -fs 9x -T DMR_PLUS -e sudo ./MMDVMPLUS MMDVMPLUS.ini &
 
