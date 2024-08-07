@@ -1,8 +1,8 @@
 #!/bin/bash
 sed -i '6c MMDVMPLUS=ON' /home/pi/status.ini
-sed -i "4c Exec=sh -c 'cd /home/pi/A108; sudo sh cerrar_DMRPLUS.sh'" /home/pi/Abrir_MMDVMPLUS.desktop
-sed -i "5c Icon=/home/pi/A108/ICONO_DMRPLUS_ON.png" /home/pi/Abrir_MMDVMPLUS.desktop
-sed -i "10c Name[es_ES]=Cerrar DMR+" /home/pi/Abrir_MMDVMPLUS.desktop
+# sed -i "4c Exec=sh -c 'cd /home/pi/A108; sudo sh cerrar_DMRPLUS.sh'" /home/pi/Abrir_MMDVMPLUS.desktop
+# sed -i "5c Icon=/home/pi/A108/ICONO_DMRPLUS_ON.png" /home/pi/Abrir_MMDVMPLUS.desktop
+# sed -i "10c Name[es_ES]=Cerrar DMR+" /home/pi/Abrir_MMDVMPLUS.desktop
 
 frecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMPLUS.ini)
 frecuencia=`expr substr $frecuencia 13 9`
