@@ -2,10 +2,10 @@
 status_dmrplus="NR==6" /home/orangepi/.local/autoarranque.ini)
 
 if [ "$status_dmrplus" = "DMR+=ON" ];then
-sed -i "4c Exec=sh -c 'cd /home/pi/A108; sh cerrar_DMRPLUS.sh'" /home/pi/Abrir_MMDVMPLUS.desktop
+sed -i "4c Exec=sh -c 'cd /home/pi/A108; sh cerrar_DMRPLUS.sh" /home/pi/Abrir_MMDVMPLUS.desktop
 sed -i "5c Icon=/home/pi/A108/ICONO_DMRPLUS_ON.png" /home/pi/Abrir_MMDVMPLUS.desktop
 sed -i "10c Name[es_ES]=Cerrar DMR+" /home/pi/Abrir_MMDVMPLUS.desktop
-//sed -i "16c MMDVMPLUS=ON" /home/pi/status.ini
+#sed -i "16c MMDVMPLUS=ON" /home/pi/status.ini
 else
 echo ""
 fi
