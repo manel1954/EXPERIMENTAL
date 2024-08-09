@@ -15,7 +15,7 @@
 # sudo rm /var/log/*.log
 # sudo rm /var/log/dvswitch/Analog*
 
-sudo rm /var/log/mmdvm/MMDVM*
+sudo rm /var/log/mmdvm/*.log
 
 # sudo rm /home/pi/DMRGateway/*.log
 # clear
