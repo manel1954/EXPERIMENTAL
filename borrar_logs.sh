@@ -19,5 +19,7 @@ sudo rm /var/log/mmdvm/MMDVM*
 
 sudo rm /home/pi/DMRGateway/*.log
 clear
-echo "\33[1;32m<<<<< BORRANDO TODOS LOS LOGS >>>>>"
+cd /home/pi/A108
+xterm -geometry 77x12+643+64 -bg black -fg white -fa 'Serif' -fs 9x -T BORRANDO_LOGS -e sh borrar_logs.sh &
+
 sleep 5
