@@ -8,4 +8,4 @@ sudo rmmod ftdi_sio
 sudo rmmod usbserial
 
 
-sudo xterm -geometry 75x12+1290+54 -bg black -fg white -fa 'Serif' -fs 9x -T STICK33_AMBED -e sudo ambed 192.168.1.44 &
+sudo xterm -geometry 77x12+1290+58 -bg black -fg white -fa 'Serif' -fs 9x -T STICK33_AMBED -e sudo ambed 192.168.1.44 &
