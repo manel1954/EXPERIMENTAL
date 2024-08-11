@@ -21,6 +21,8 @@ MARRON="\33[38;5;138m"
                         sleep 3
                         sudo rm /usr/share/applications/anydesk.desktop
                         sudo rm -R /home/pi/.anydesk
+                        sudo rm /usr/bin/anydesk-global-settings
+                        sudo rm /usr/bin/anydesk
                         sudo killall anydesk
                         
            
