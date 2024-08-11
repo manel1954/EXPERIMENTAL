@@ -19,6 +19,8 @@ MARRON="\33[38;5;138m"
                         sleep 2                    
                         sed -i "12c ANYDESK=OFF" /home/pi/info.ini                        
                         sleep 3
+                        sudo rm /usr/share/applications/anydesk.desktop
+                        sudo rm -R /home/pi/.anydesk
                         sudo killall anydesk
                         
            
