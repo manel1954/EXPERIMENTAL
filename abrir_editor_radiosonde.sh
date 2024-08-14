@@ -1,4 +1,4 @@
 #!/bin/bash  
 
-cd /home/pi/SYSTEM/qt
+cd /home/pi/A108/qt
 ./qt_radiosonde
