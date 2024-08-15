@@ -11,7 +11,7 @@ sed -i "81c $puerto" /home/pi/status.ini
 x=$(awk "NR==94" /home/pi/status.ini)
 
 # Ejecuta Solo D-STAR 
-sudo systemctl stop ircddbgatewayd.service
+# sudo systemctl stop ircddbgatewayd.service
 sudo ircddbgateway -gui &
 
 # cd /home/pi/MMDVMHost
