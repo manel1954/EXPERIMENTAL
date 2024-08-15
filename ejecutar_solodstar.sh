@@ -22,5 +22,5 @@ x=$(awk "NR==94" /home/pi/status.ini)
 # Ejecuta Solo D-STAR 
 sudo ircddbgateway -gui &
 cd /home/pi/MMDVMHost
-xterm -geometry 76x10+$x+764  -bg black -fg cyan -fa 'arial' -fs 10x -T SOLO_DSTAR -e sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
+xterm -geometry 76x10+$x+764  -bg black -fg cyan -fa 'arial' -fs 10x -T SOLO_DSTAR -e sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 
