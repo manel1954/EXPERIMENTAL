@@ -14,13 +14,13 @@ x=$(awk "NR==94" /home/pi/status.ini)
 # # sudo systemctl stop ircddbgatewayd.service
 # sudo ircddbgateway -gui &
 
-cd /home/pi/MMDVMHost
-xterm -geometry 76x10+$x+764  -bg black -fg cyan -fa 'arial' -fs 10x -T SOLO_DSTAR -e sudo ./MMDVMDSTAR MMDVMDSTAR.ini &
+# cd /home/pi/MMDVMHost
+# xterm -geometry 76x10+$x+764  -bg black -fg cyan -fa 'arial' -fs 10x -T SOLO_DSTAR -e sudo ./MMDVMDSTAR MMDVMDSTAR.ini &
 
 # sudo systemctl stop ircddbgatewayd.service
 
-# # Ejecuta Solo D-STAR 
-# sudo ircddbgateway -gui &
-# cd /home/pi/MMDVMHost
-# sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
+# Ejecuta Solo D-STAR 
+sudo ircddbgateway -gui &
+cd /home/pi/MMDVMHost
+sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 
