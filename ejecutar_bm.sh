@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# sed -i "4c Exec=sh -c 'cd /home/pi/A108; sh cerrar_bm.sh" /home/pi/Abrir_MMDVMBM.desktop
-# sed -i "5c Icon=/home/pi/A108/ICONO_BM_ON.png" /home/pi/Abrir_MMDVMBM.desktop
-# sed -i "10c Name[es_ES]=Cerrar BM" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "7c MMDVMBM=ON" /home/pi/status.ini
 
 frecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMBM.ini)
