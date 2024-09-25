@@ -1,7 +1,7 @@
 #!/bin/bash
 
                         cd /home/pi/EXPERIMENTAL                      
-                        #git pull --force 
+                        #git pull --force  
 
                         git config --global pull.rebase false 
                     
