@@ -1,9 +1,9 @@
 #!/bin/bash
 
                         cd /home/pi/EXPERIMENTAL                      
-                        #git pull --force  
+                        git pull --force  
 
-                        git config --global pull.rebase false 
+                        #git config --global pull.rebase false 
                     
                         sudo rm -R /home/pi/A108
                         mkdir /home/pi/A108                                                
