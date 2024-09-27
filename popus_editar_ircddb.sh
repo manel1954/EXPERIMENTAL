@@ -24,7 +24,7 @@ echo "   * ${BLANCO}                                                            
 echo "   ***********************************************************************************"
 
 #abre el editor ircDDB
-cd /ircDDBGateway/ircDDBGatewayConfig
+cd /home/pi/ircDDBGateway/ircDDBGatewayConfig
 sudo ircddbgatewayconfig
 
 
